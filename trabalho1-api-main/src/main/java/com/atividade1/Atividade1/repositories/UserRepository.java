@@ -1,17 +1,17 @@
-package br.com.residencia.seguranca.repository;
+package com.atividade1.Atividade1.repositories;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import br.com.residencia.seguranca.entity.User;
+import com.atividade1.Atividade1.entities.User;
+
+
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
 	Optional<User> findByUsername(String username);
-	
-	Optional<User> findByEmail(String email);
 
 	Boolean existsByUsername(String username);
 

@@ -33,9 +33,9 @@ public class LivroController {
 	public ResponseEntity<Livro> getLivroById(@PathVariable Integer id) {
 
 		Livro livroResponse = livroService.getLivroById(id);
-		if (livroResponse == null)
-			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-		else
+//		if (livroResponse == null)
+//			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+//		else
 			return new ResponseEntity<>(livroResponse, HttpStatus.OK);
 
 	}

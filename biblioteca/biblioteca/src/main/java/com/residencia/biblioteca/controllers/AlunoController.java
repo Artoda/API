@@ -35,9 +35,9 @@ public class AlunoController {
 	public ResponseEntity<Aluno> getAlunoById(@PathVariable Integer id) {
 
 		Aluno alunoResponse = alunoService.getAlunoById(id);
-		if (alunoResponse == null)
-			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-		else
+//		if (alunoResponse == null)
+//			return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+//		else
 			return new ResponseEntity<>(alunoResponse, HttpStatus.OK);
 
 	}
